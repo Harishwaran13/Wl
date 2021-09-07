@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel ="stylesheet" type="text/css" href="css/register.css">
+
+
+
+<style>
+
+
+form {
+    display: inline-block;
+    position: absolute;
+    top: 100px;
+    left: 620px;
+}
+
+body {
+  background-color: black;
+  background-image: url('img/kera1.jpeg');
+  background-size: cover;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 10px;
+  background-color:#71786c;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 50%;
+  padding: 10px;
+  margin: 5px 0 18px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25cpx;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+  background-color: #2f4952;
+  color: white;
+  padding: 10px 10px;
+  margin: 4px 0;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+/* Add a blue text color to links */
+
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color:#080000;
+  text-align: center;
+}
+footer {
+    width: 100%;
+    height: 80px;
+    background: #48575c;
+    position: absolute;
+    top: 1100px;
+    left: 0;
+}
+</style>
+</head>
+<body>
+
+  <Center>  <h1>Welcome to Star Tourism User Registration</h1> </Center>
+
+<form action="index.html">
+  <div class="container">
+
+   <Center> <p>Please fill in this form to create an account.</p><Center>
+
+    <label for="name"><b>Name</b></label>
+    <input type="text" placeholder="Enter name" name="name" id="name" required>
+<br>
+<br>
+    <label for="dateofbirth"><b>Enter your Dateofbirth</b></label>
+    <p></p> <label for="Dateofbirth">Dateofbirth:</label>
+      <input type="date" id="dateofbirth" name="dateofbirth">
+
+    </form><br>
+    <br>
+    <br>
+    <label for="gender"><b>Enter your gender</b></label><br>
+    <br><input type="radio" id="male" name="gender" value="male">
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="Female">
+      <label for="female">Female</label><br>
+     
+    <br>
+     <br>
+ <label for="Interset"><b><P>Select your choice of Transport</P></b></label>
+
+  <p><input type="checkbox" id="transport1" name="transport1" value="Roadways">
+  <labe1 for="transport1"> Roadways</label><br>
+  <input type="checkbox" id="transport2" name="transport1" value=" Airways">
+  <label for="transport2"> Airways</label><br>
+  <input type="checkbox" id="transport3" name="transport1" value="Train">
+  <label for="transport3"> Train</label><br><br>
+
+  <label for="hoby"><b>Enter your Interest</b></label><br><br>
+  <label for="cars">Choose an feild :</label>
+  <select id="cars" name="cars">
+    <option value="Wildlife">Wildlife</option>
+    <option value="Heritage">Heritage</option>
+    <option value="Trekking">Trekking</option>
+  </select>
+  <br>
+  <br>
+  <br>
+  <label for="contact"><b>Contact Number:</b></label>
+  <input type="text" placeholder="Enter your contact number" name="contact" id="contact" required>
+  <br>
+  <label for="email"><b>Enter your Email:</b></label>
+    <input type="text" placeholder="Enter your Email ID" name="email" id="email" required>
+      <br>
+
+    <label for="psw"><b>Enter Password:</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+  <br>
+    <label for="psw-repeat"><b>Confirm Password:</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+    <hr>
+    <p>By creating an account you agree to our <a href="index.html"><span style="color:blue">Terms & Privacy</span></a>.</p>
+
+    <button type="submit" class="registerbtn">Register</button>
+  </div>
+</form>
+<footer>
+
+<center>	<p id="footer"> Copyright 2021. All Rights Reserved. | Star Tourism website</p></center>
+
+</footer>
+
+</body>
+</html>
